@@ -104,9 +104,14 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
 
 - (NSURL *)buildURLWithService:(NMServiceType )service methodName:(NSString *)methodName params:(NSDictionary *)params
 {
-    if (![methodName length] || !params || ![params isKindOfClass:[NSDictionary class]]) {
+    if (![methodName length]) {
         return nil;
     }
+    
+    if (params && ![params isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    
     NSString *requestStr = nil;
     switch (service) {
         case NMServiceWei64:

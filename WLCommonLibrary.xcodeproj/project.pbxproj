@@ -811,6 +811,7 @@
 		8F328353184C6579005FB638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/WLCommonLibrary.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -835,6 +836,7 @@
 		8F328354184C6579005FB638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/WLCommonLibrary.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
