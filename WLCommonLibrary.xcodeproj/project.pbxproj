@@ -53,6 +53,7 @@
 		8F32843E184C7413005FB638 /* ToolSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32843D184C7413005FB638 /* ToolSet.m */; };
 		8F6EE19D184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */; };
 		8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */; };
+		8F6EE1A5184C7CC700432FA8 /* RTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE1A4184C7CC700432FA8 /* RTColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,8 @@
 		8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		8F6EE19B184C7BF900432FA8 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		8F6EE1A3184C7CC700432FA8 /* RTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTColor.h; sourceTree = "<group>"; };
+		8F6EE1A4184C7CC700432FA8 /* RTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,6 +551,8 @@
 		8F32842F184C73A2005FB638 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				8F6EE1A3184C7CC700432FA8 /* RTColor.h */,
+				8F6EE1A4184C7CC700432FA8 /* RTColor.m */,
 				8F328430184C73A2005FB638 /* NSObject+NSJSONSerialization.h */,
 				8F328431184C73A2005FB638 /* NSObject+NSJSONSerialization.m */,
 				8F328432184C73A2005FB638 /* NSString+MD5Addition.h */,
@@ -662,6 +667,7 @@
 				8F328411184C70E9005FB638 /* AFXMLRequestOperation.m in Sources */,
 				8F32840C184C70E9005FB638 /* AFImageRequestOperation.m in Sources */,
 				8F32843E184C7413005FB638 /* ToolSet.m in Sources */,
+				8F6EE1A5184C7CC700432FA8 /* RTColor.m in Sources */,
 				8F32840F184C70E9005FB638 /* AFPropertyListRequestOperation.m in Sources */,
 				8F32841F184C70E9005FB638 /* UIButton+WebCache.m in Sources */,
 				8F32840B184C70E9005FB638 /* AFHTTPRequestOperation.m in Sources */,
