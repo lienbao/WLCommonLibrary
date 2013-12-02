@@ -13,7 +13,6 @@
 		8F328344184C6579005FB638 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F328343184C6579005FB638 /* UIKit.framework */; };
 		8F328347184C6579005FB638 /* libWLCommonLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F32832F184C6579005FB638 /* libWLCommonLibrary.a */; };
 		8F32834D184C6579005FB638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F32834B184C6579005FB638 /* InfoPlist.strings */; };
-		8F32834F184C6579005FB638 /* WLCommonLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32834E184C6579005FB638 /* WLCommonLibraryTests.m */; };
 		8F32840A184C70E9005FB638 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328397184C70E9005FB638 /* AFHTTPClient.m */; };
 		8F32840B184C70E9005FB638 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328399184C70E9005FB638 /* AFHTTPRequestOperation.m */; };
 		8F32840C184C70E9005FB638 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32839B184C70E9005FB638 /* AFImageRequestOperation.m */; };
@@ -52,6 +51,8 @@
 		8F32843A184C73A2005FB638 /* UDIDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328435184C73A2005FB638 /* UDIDWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F32843B184C73A2005FB638 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328437184C73A2005FB638 /* UIDevice+IdentifierAddition.m */; };
 		8F32843E184C7413005FB638 /* ToolSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32843D184C7413005FB638 /* ToolSet.m */; };
+		8F6EE19D184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */; };
+		8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,6 @@
 		8F328343184C6579005FB638 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8F32834A184C6579005FB638 /* WLCommonLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WLCommonLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		8F32834C184C6579005FB638 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8F32834E184C6579005FB638 /* WLCommonLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLCommonLibraryTests.m; sourceTree = "<group>"; };
 		8F328396184C70E9005FB638 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		8F328397184C70E9005FB638 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		8F328398184C70E9005FB638 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -193,6 +193,10 @@
 		8F328437184C73A2005FB638 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		8F32843C184C7413005FB638 /* ToolSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolSet.h; path = WLCommonLibrary/ToolSet.h; sourceTree = "<group>"; };
 		8F32843D184C7413005FB638 /* ToolSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolSet.m; path = WLCommonLibrary/ToolSet.m; sourceTree = "<group>"; };
+		8F6EE199184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		8F6EE19B184C7BF900432FA8 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +263,6 @@
 		8F328348184C6579005FB638 /* WLCommonLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
-				8F32834E184C6579005FB638 /* WLCommonLibraryTests.m */,
 				8F328349184C6579005FB638 /* Supporting Files */,
 			);
 			path = WLCommonLibraryTests;
@@ -277,8 +280,9 @@
 		8F328394184C70D9005FB638 /* WLCommLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				8F32842F184C73A2005FB638 /* category */,
 				8F32842E184C7330005FB638 /* WLCommonLibrary-Prefix.pch */,
+				8F6EE198184C7BF900432FA8 /* TPKeyboardAvoiding */,
+				8F32842F184C73A2005FB638 /* category */,
 				8F32842A184C717C005FB638 /* NetworkManager */,
 				8F328395184C70E9005FB638 /* AFNetworking */,
 				8F3283A9184C70E9005FB638 /* EGOTableViewPullRefresh */,
@@ -556,6 +560,17 @@
 			path = category;
 			sourceTree = "<group>";
 		};
+		8F6EE198184C7BF900432FA8 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				8F6EE199184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.h */,
+				8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */,
+				8F6EE19B184C7BF900432FA8 /* TPKeyboardAvoidingTableView.h */,
+				8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -656,9 +671,11 @@
 				8F32840E184C70E9005FB638 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				8F32841C184C70E9005FB638 /* SDWebImageDownloader.m in Sources */,
 				8F328419184C70E9005FB638 /* MKAnnotationView+WebCache.m in Sources */,
+				8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */,
 				8F32842D184C7190005FB638 /* NetworkManager.m in Sources */,
 				8F328413184C70E9005FB638 /* EGORefreshTableHeaderView.m in Sources */,
 				8F328417184C70E9005FB638 /* MBProgressHUD.m in Sources */,
+				8F6EE19D184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8F328422184C70E9005FB638 /* SVSegmentedThumb.m in Sources */,
 				8F32843A184C73A2005FB638 /* UDIDWrapper.m in Sources */,
 				8F328439184C73A2005FB638 /* NSString+MD5Addition.m in Sources */,
@@ -674,7 +691,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F32834F184C6579005FB638 /* WLCommonLibraryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
