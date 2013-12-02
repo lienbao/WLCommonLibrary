@@ -8,9 +8,9 @@
 
 #import "UDIDWrapper.h"
 
-static NSString *serviceName = @"com.anjukeApps";
-static NSString *udidName = @"anjukeAppsUDID";
-static NSString *pasteboardType = @"anjukeAppsContent";
+static NSString *serviceName = @"com.wei64Apps";
+static NSString *udidName = @"wei64AppsUDID";
+static NSString *pasteboardType = @"wei64AppsContent";
 
 @implementation UDIDWrapper
 

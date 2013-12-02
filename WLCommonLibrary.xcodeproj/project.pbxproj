@@ -50,10 +50,11 @@
 		8F328439184C73A2005FB638 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328433184C73A2005FB638 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F32843A184C73A2005FB638 /* UDIDWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328435184C73A2005FB638 /* UDIDWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F32843B184C73A2005FB638 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F328437184C73A2005FB638 /* UIDevice+IdentifierAddition.m */; };
-		8F32843E184C7413005FB638 /* ToolSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F32843D184C7413005FB638 /* ToolSet.m */; };
 		8F6EE19D184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */; };
 		8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */; };
-		8F6EE1A5184C7CC700432FA8 /* RTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE1A4184C7CC700432FA8 /* RTColor.m */; };
+		8F6EE1A5184C7CC700432FA8 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE1A4184C7CC700432FA8 /* UIColor+Hex.m */; };
+		8F6EE1AA184C7E6700432FA8 /* UIImage+Processing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE1A9184C7E6700432FA8 /* UIImage+Processing.m */; };
+		8F6EE1AF184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6EE1AE184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,14 +193,16 @@
 		8F328435184C73A2005FB638 /* UDIDWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDIDWrapper.m; sourceTree = "<group>"; };
 		8F328436184C73A2005FB638 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
 		8F328437184C73A2005FB638 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
-		8F32843C184C7413005FB638 /* ToolSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolSet.h; path = WLCommonLibrary/ToolSet.h; sourceTree = "<group>"; };
-		8F32843D184C7413005FB638 /* ToolSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolSet.m; path = WLCommonLibrary/ToolSet.m; sourceTree = "<group>"; };
 		8F6EE199184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		8F6EE19A184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		8F6EE19B184C7BF900432FA8 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
 		8F6EE19C184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
-		8F6EE1A3184C7CC700432FA8 /* RTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTColor.h; sourceTree = "<group>"; };
-		8F6EE1A4184C7CC700432FA8 /* RTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTColor.m; sourceTree = "<group>"; };
+		8F6EE1A3184C7CC700432FA8 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		8F6EE1A4184C7CC700432FA8 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		8F6EE1A8184C7E6700432FA8 /* UIImage+Processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Processing.h"; sourceTree = "<group>"; };
+		8F6EE1A9184C7E6700432FA8 /* UIImage+Processing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Processing.m"; sourceTree = "<group>"; };
+		8F6EE1AD184C7EFF00432FA8 /* UIScrollView+UITouchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouchEvent.h"; sourceTree = "<group>"; };
+		8F6EE1AE184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouchEvent.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,7 +288,7 @@
 			children = (
 				8F32842E184C7330005FB638 /* WLCommonLibrary-Prefix.pch */,
 				8F6EE198184C7BF900432FA8 /* TPKeyboardAvoiding */,
-				8F32842F184C73A2005FB638 /* category */,
+				8F32842F184C73A2005FB638 /* Category */,
 				8F32842A184C717C005FB638 /* NetworkManager */,
 				8F328395184C70E9005FB638 /* AFNetworking */,
 				8F3283A9184C70E9005FB638 /* EGOTableViewPullRefresh */,
@@ -540,19 +543,21 @@
 		8F32842A184C717C005FB638 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				8F32843C184C7413005FB638 /* ToolSet.h */,
-				8F32843D184C7413005FB638 /* ToolSet.m */,
 				8F32842B184C7190005FB638 /* NetworkManager.h */,
 				8F32842C184C7190005FB638 /* NetworkManager.m */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
 		};
-		8F32842F184C73A2005FB638 /* category */ = {
+		8F32842F184C73A2005FB638 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				8F6EE1A3184C7CC700432FA8 /* RTColor.h */,
-				8F6EE1A4184C7CC700432FA8 /* RTColor.m */,
+				8F6EE1AD184C7EFF00432FA8 /* UIScrollView+UITouchEvent.h */,
+				8F6EE1AE184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m */,
+				8F6EE1A8184C7E6700432FA8 /* UIImage+Processing.h */,
+				8F6EE1A9184C7E6700432FA8 /* UIImage+Processing.m */,
+				8F6EE1A3184C7CC700432FA8 /* UIColor+Hex.h */,
+				8F6EE1A4184C7CC700432FA8 /* UIColor+Hex.m */,
 				8F328430184C73A2005FB638 /* NSObject+NSJSONSerialization.h */,
 				8F328431184C73A2005FB638 /* NSObject+NSJSONSerialization.m */,
 				8F328432184C73A2005FB638 /* NSString+MD5Addition.h */,
@@ -562,6 +567,7 @@
 				8F328436184C73A2005FB638 /* UIDevice+IdentifierAddition.h */,
 				8F328437184C73A2005FB638 /* UIDevice+IdentifierAddition.m */,
 			);
+			name = Category;
 			path = category;
 			sourceTree = "<group>";
 		};
@@ -664,16 +670,17 @@
 				8F328421184C70E9005FB638 /* SVSegmentedControl.m in Sources */,
 				8F328412184C70E9005FB638 /* UIImageView+AFNetworking.m in Sources */,
 				8F328416184C70E9005FB638 /* JSONKit.m in Sources */,
+				8F6EE1AF184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m in Sources */,
 				8F328411184C70E9005FB638 /* AFXMLRequestOperation.m in Sources */,
 				8F32840C184C70E9005FB638 /* AFImageRequestOperation.m in Sources */,
-				8F32843E184C7413005FB638 /* ToolSet.m in Sources */,
-				8F6EE1A5184C7CC700432FA8 /* RTColor.m in Sources */,
+				8F6EE1A5184C7CC700432FA8 /* UIColor+Hex.m in Sources */,
 				8F32840F184C70E9005FB638 /* AFPropertyListRequestOperation.m in Sources */,
 				8F32841F184C70E9005FB638 /* UIButton+WebCache.m in Sources */,
 				8F32840B184C70E9005FB638 /* AFHTTPRequestOperation.m in Sources */,
 				8F32841B184C70E9005FB638 /* SDWebImageDecoder.m in Sources */,
 				8F32843B184C73A2005FB638 /* UIDevice+IdentifierAddition.m in Sources */,
 				8F32841A184C70E9005FB638 /* SDImageCache.m in Sources */,
+				8F6EE1AA184C7E6700432FA8 /* UIImage+Processing.m in Sources */,
 				8F32840E184C70E9005FB638 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				8F32841C184C70E9005FB638 /* SDWebImageDownloader.m in Sources */,
 				8F328419184C70E9005FB638 /* MKAnnotationView+WebCache.m in Sources */,

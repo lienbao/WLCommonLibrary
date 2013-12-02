@@ -28,6 +28,24 @@
 #pragma mark -
 #pragma mark Private Methods
 
++ (NSString *)identifier
+{
+    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+        return [[UIDevice currentDevice] macaddress];
+    }
+    return [[UIDevice currentDevice] udid];
+}
+
++ (NSString *)appName
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+}
+
++ (NSString *)appVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+}
+
 // Return the local MAC addy
 // Courtesy of FreeBSD hackers email list
 // Accidentally munged during previous update. Fixed thanks to erica sadun & mlamb.

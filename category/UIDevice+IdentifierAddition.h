@@ -15,11 +15,16 @@
  * @method uuid
  * @description apple identifier support iOS6 and iOS5 below
  */
++ (NSString *)appName;
++ (NSString *)appVersion;
++ (NSString *)identifier;
 
+- (NSString *) macaddress;
 - (NSString *) uuid;
 - (NSString *) udid;
-- (NSString *) macaddress;
+
 - (NSString *) macaddressMD5;
 - (NSString *) machineType;
 - (NSString *) ostype;//显示“ios6，ios5”，只显示大版本号
+
 @end

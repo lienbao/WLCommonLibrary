@@ -7,7 +7,7 @@
 //
 
 #import "NetworkManager.h"
-#import "ToolSet.h"
+#import "UIDevice+IdentifierAddition.h"
 #import <CommonCrypto/CommonDigest.h>
 
 static NSString * const kWei64ServiceUrl    = @"http://api.wei64.com:10001/1";
@@ -117,9 +117,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
             } else {
                 paramsDic = [NSMutableDictionary dictionary];
             }
-            [paramsDic setObject:[ToolSet identifier] forKey:@"mac"];
-            [paramsDic setObject:[ToolSet appName] forKey:@"app"];
-            [paramsDic setObject:[ToolSet appVersion] forKey:@"version"];
+            [paramsDic setObject:[UIDevice identifier]  forKey:@"mac"];
+            [paramsDic setObject:[UIDevice appName]     forKey:@"app"];
+            [paramsDic setObject:[UIDevice appVersion]  forKey:@"version"];
             NSString *beforeEncode = [self implodeWithDictionary:paramsDic withSeparator:@"&" encode:NO];
             NSString *strParams = [NSString stringWithFormat:@"%@",[beforeEncode stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, methodName, strParams];

@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "RTColor.h"
+#import "UIColor+Hex.h"
 
 @implementation UIColor (RTColor)
 
