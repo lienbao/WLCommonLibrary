@@ -41,7 +41,6 @@
 		8F328423184C70E9005FB638 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283E1184C70E9005FB638 /* libMobClickLibrary.a */; };
 		8F328424184C70E9005FB638 /* libMobClickLibrary_armv6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283E2184C70E9005FB638 /* libMobClickLibrary_armv6.a */; };
 		8F328425184C70E9005FB638 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283E5184C70E9005FB638 /* libUMFeedback.a */; };
-		8F328426184C70E9005FB638 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283ED184C70E9005FB638 /* TencentOpenAPI.framework */; };
 		8F328427184C70EA005FB638 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283EF184C70E9005FB638 /* libWeChatSDK.a */; };
 		8F328428184C70EA005FB638 /* libUMSocial_Sdk_3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283FD184C70E9005FB638 /* libUMSocial_Sdk_3.1.a */; };
 		8F328429184C70EA005FB638 /* libUMSocial_Sdk_Comment_3.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283FE184C70E9005FB638 /* libUMSocial_Sdk_Comment_3.1.a */; };
@@ -203,6 +202,7 @@
 		8F6EE1A9184C7E6700432FA8 /* UIImage+Processing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Processing.m"; sourceTree = "<group>"; };
 		8F6EE1AD184C7EFF00432FA8 /* UIScrollView+UITouchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouchEvent.h"; sourceTree = "<group>"; };
 		8F6EE1AE184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouchEvent.m"; sourceTree = "<group>"; };
+		8FDDF125184D7085007A2980 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,15 +210,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F328333184C6579005FB638 /* Foundation.framework in Frameworks */,
 				8F328429184C70EA005FB638 /* libUMSocial_Sdk_Comment_3.1.a in Frameworks */,
 				8F328428184C70EA005FB638 /* libUMSocial_Sdk_3.1.a in Frameworks */,
 				8F328425184C70E9005FB638 /* libUMFeedback.a in Frameworks */,
-				8F328333184C6579005FB638 /* Foundation.framework in Frameworks */,
 				8F328427184C70EA005FB638 /* libWeChatSDK.a in Frameworks */,
 				8F328415184C70E9005FB638 /* libPushSDK.a in Frameworks */,
 				8F328414184C70E9005FB638 /* libPushSDK-Simulator.a in Frameworks */,
 				8F328423184C70E9005FB638 /* libMobClickLibrary.a in Frameworks */,
-				8F328426184C70E9005FB638 /* TencentOpenAPI.framework in Frameworks */,
 				8F328424184C70E9005FB638 /* libMobClickLibrary_armv6.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +258,7 @@
 		8F328331184C6579005FB638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FDDF125184D7085007A2980 /* SystemConfiguration.framework */,
 				8F328332184C6579005FB638 /* Foundation.framework */,
 				8F328340184C6579005FB638 /* XCTest.framework */,
 				8F328343184C6579005FB638 /* UIKit.framework */,
@@ -827,7 +827,11 @@
 					"$(SRCROOT)/UMSocial_ios_sdk/frameworks/Wechat/**",
 					"$(SRCROOT)/UMSocial_ios_sdk/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -852,7 +856,11 @@
 					"$(SRCROOT)/UMSocial_ios_sdk/frameworks/Wechat/**",
 					"$(SRCROOT)/UMSocial_ios_sdk/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
