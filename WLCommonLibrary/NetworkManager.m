@@ -32,6 +32,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
         DLog(@"error:%@", [error localizedDescription]);
         return FALSE;
     }
+    if ([response isKindOfClass:[NSNull class]]) {
+        return FALSE;
+    }
     NSNumber *code = [response objectForKey:@"code"];
     if (200 != [code intValue]) {
         DLog(@"response:%@", response);
@@ -178,7 +181,6 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
 		[paramsString appendFormat:@"&%@=%@", key, [params objectForKey:key]];
 	}
 	[signString appendString:kDianpingSecret];
-    
     
 	unsigned char digest[CC_SHA1_DIGEST_LENGTH];
 	NSData *stringBytes = [signString dataUsingEncoding: NSUTF8StringEncoding];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F02E85718504B3F00B02220 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDDF125184D7085007A2980 /* SystemConfiguration.framework */; };
 		8F328333184C6579005FB638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F328332184C6579005FB638 /* Foundation.framework */; };
 		8F328341184C6579005FB638 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F328340184C6579005FB638 /* XCTest.framework */; };
 		8F328342184C6579005FB638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F328332184C6579005FB638 /* Foundation.framework */; };
@@ -210,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F02E85718504B3F00B02220 /* SystemConfiguration.framework in Frameworks */,
 				8F328333184C6579005FB638 /* Foundation.framework in Frameworks */,
 				8F328429184C70EA005FB638 /* libUMSocial_Sdk_Comment_3.1.a in Frameworks */,
 				8F328428184C70EA005FB638 /* libUMSocial_Sdk_3.1.a in Frameworks */,
