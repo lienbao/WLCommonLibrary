@@ -23,8 +23,8 @@
 - (NSString *) uuid;
 - (NSString *) udid;
 
-- (NSString *) macaddressMD5;
-- (NSString *) machineType;
-- (NSString *) ostype;//显示“ios6，ios5”，只显示大版本号
+- (NSString *)macaddressMD5;
++ (NSString *)deviceType;
++ (NSString *)ostype;//显示“ios6，ios5”，只显示大版本号
 
 @end
