@@ -84,6 +84,8 @@
  - Operation copies do not include `completionBlock`. `completionBlock` often strongly captures a reference to `self`, which would otherwise have the unintuitive side-effect of pointing to the _original_ operation when copied.
  */
 
+#define _AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_
+
 #ifdef _AFNETWORKING_PIN_SSL_CERTIFICATES_
 typedef enum {
     AFSSLPinningModeNone,

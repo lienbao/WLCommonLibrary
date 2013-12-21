@@ -26,8 +26,8 @@ static NSString * const kDianpingSecret = @"8d25190423204c5f8dd242fccfcca6e9";
 + (BOOL)checkoutResponse:(id)response andError:(NSError *)error;
 + (NSString *)errorDescription:(id)response default:(NSString *)error;
 
-- (void)requestWithmethodName:(NSString *)methodName params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result;
+- (AFJSONRequestOperation *)asynWithMethod:(NSString *)method params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result;
 
-- (AFJSONRequestOperation *)requestWithService:(NMServiceType )service methodName:(NSString *)methodName params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result;
+- (AFJSONRequestOperation *)asynWithService:(NMServiceType )service method:(NSString *)method params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result;
 
 @end

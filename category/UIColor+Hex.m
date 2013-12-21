@@ -10,7 +10,6 @@
 
 @implementation UIColor (RTColor)
 
-//UIColor *blueColor = [UIColor colorWithHex:0x0174AC alpha:1];
 + (UIColor *) colorWithHex:(uint) hex alpha:(CGFloat)alpha
 {
 	int red, green, blue;

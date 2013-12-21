@@ -10,7 +10,7 @@
 #import "UIDevice+IdentifierAddition.h"
 #import <CommonCrypto/CommonDigest.h>
 
-static NSString * const kWei64ServiceUrl    = @"http://api.wei64.com:10001/1";
+static NSString * const kWei64ServiceUrl    = @"https://api.wei64.com";
 static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
 
 @implementation NetworkManager
@@ -51,9 +51,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
     return error;
 }
 
-- (AFJSONRequestOperation *)requestWithService:(NMServiceType )service methodName:(NSString *)methodName params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result
+- (AFJSONRequestOperation *)asynWithService:(NMServiceType )service method:(NSString *)method params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result
 {
-    NSURL *url = [self buildURLWithService:service methodName:methodName params:params];
+    NSURL *url = [self buildURLWithService:service method:method params:params];
     if (!url) {
         result(nil, nil);
         return nil;
@@ -71,9 +71,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
     return operation;
 }
 
-- (void)requestWithmethodName:(NSString *)methodName params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result
+- (AFJSONRequestOperation *)asynWithMethod:(NSString *)method params:(NSDictionary *)params result:(void (^)(id JSON, NSError *error))result
 {
-    [self requestWithService:NMServiceWei64 methodName:methodName params:params result:result];
+    return [self asynWithService:NMServiceWei64 method:method params:params result:result];
 }
 
 #pragma mark - private method
@@ -105,9 +105,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
     return temp;
 }
 
-- (NSURL *)buildURLWithService:(NMServiceType )service methodName:(NSString *)methodName params:(NSDictionary *)params
+- (NSURL *)buildURLWithService:(NMServiceType )service method:(NSString *)method params:(NSDictionary *)params
 {
-    if (![methodName length]) {
+    if (![method length]) {
         return nil;
     }
     
@@ -132,12 +132,12 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
             [paramsDic setObject:[UIDevice ostype]  forKey:@"ostype"];
             NSString *beforeEncode = [self implodeWithDictionary:paramsDic withSeparator:@"&" encode:NO];
             NSString *strParams = [NSString stringWithFormat:@"%@",[beforeEncode stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-            requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, methodName, strParams];
+            requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, method, strParams];
         }
             break;
         case NMServiceDianping:
         {
-            NSString *baseUrl = [NSString stringWithFormat:@"%@%@", kDianpingServiceUrl, methodName];
+            NSString *baseUrl = [NSString stringWithFormat:@"%@%@", kDianpingServiceUrl, method];
             requestStr = [[self class] serializeURL:baseUrl params:params];
         }
             break;
