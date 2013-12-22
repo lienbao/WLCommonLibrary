@@ -130,9 +130,9 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
             [paramsDic setObject:[UIDevice appVersion]  forKey:@"version"];
             [paramsDic setObject:[UIDevice deviceType]  forKey:@"device"];
             [paramsDic setObject:[UIDevice ostype]  forKey:@"ostype"];
-            NSString *beforeEncode = [self implodeWithDictionary:paramsDic withSeparator:@"&" encode:NO];
-            NSString *strParams = [NSString stringWithFormat:@"%@",[beforeEncode stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-            requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, method, strParams];
+            NSString *beforeEncode = [self implodeWithDictionary:paramsDic withSeparator:@"&" encode:YES];
+            //NSString *strParams = [NSString stringWithFormat:@"%@",[beforeEncode stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+            requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, method, beforeEncode/*strParams*/];
         }
             break;
         case NMServiceDianping:
