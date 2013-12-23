@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5B5FD018687088001BD675 /* WLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B5FCF18687088001BD675 /* WLLocationManager.m */; };
 		0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0FC1F7BE1865D0980030F80B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7B91865D0980030F80B /* NSData+Base64.m */; };
 		0FC1F7BF1865D0980030F80B /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7BB1865D0980030F80B /* NSData+CommonCrypto.m */; };
@@ -84,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F5B5FCE18687088001BD675 /* WLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WLLocationManager.h; path = WLCommonLibrary/WLLocationManager.h; sourceTree = "<group>"; };
+		0F5B5FCF18687088001BD675 /* WLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WLLocationManager.m; path = WLCommonLibrary/WLLocationManager.m; sourceTree = "<group>"; };
 		0FC1F7AC1865B9DE0030F80B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		0FC1F7AE1865B9DE0030F80B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 		8F328394184C70D9005FB638 /* WLCommLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				0F5B5FCE18687088001BD675 /* WLLocationManager.h */,
+				0F5B5FCF18687088001BD675 /* WLLocationManager.m */,
 				8F32842E184C7330005FB638 /* WLCommonLibrary-Prefix.pch */,
 				0FC1F7AB1865B9DE0030F80B /* base64 */,
 				8F6EE198184C7BF900432FA8 /* TPKeyboardAvoiding */,
@@ -732,6 +737,7 @@
 				8F328438184C73A2005FB638 /* NSObject+NSJSONSerialization.m in Sources */,
 				0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */,
 				8F32840D184C70E9005FB638 /* AFJSONRequestOperation.m in Sources */,
+				0F5B5FD018687088001BD675 /* WLLocationManager.m in Sources */,
 				8F32840A184C70E9005FB638 /* AFHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
