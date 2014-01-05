@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0F5B5FD018687088001BD675 /* WLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5B5FCF18687088001BD675 /* WLLocationManager.m */; };
+		0F7CF7FD187984000030E241 /* NSDashedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF7FA187984000030E241 /* NSDashedLineView.m */; };
+		0F7CF7FE187984000030E241 /* NSDate+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF7FC187984000030E241 /* NSDate+RT.m */; };
+		0F7CF8031879840B0030E241 /* UISearchBar+removeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF8001879840B0030E241 /* UISearchBar+removeBackgroundView.m */; };
+		0F7CF8041879840B0030E241 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF8021879840B0030E241 /* UIView+Frame.m */; };
 		0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0FC1F7BE1865D0980030F80B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7B91865D0980030F80B /* NSData+Base64.m */; };
 		0FC1F7BF1865D0980030F80B /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7BB1865D0980030F80B /* NSData+CommonCrypto.m */; };
@@ -87,6 +91,14 @@
 /* Begin PBXFileReference section */
 		0F5B5FCE18687088001BD675 /* WLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WLLocationManager.h; path = WLCommonLibrary/WLLocationManager.h; sourceTree = "<group>"; };
 		0F5B5FCF18687088001BD675 /* WLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WLLocationManager.m; path = WLCommonLibrary/WLLocationManager.m; sourceTree = "<group>"; };
+		0F7CF7F9187984000030E241 /* NSDashedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDashedLineView.h; sourceTree = "<group>"; };
+		0F7CF7FA187984000030E241 /* NSDashedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDashedLineView.m; sourceTree = "<group>"; };
+		0F7CF7FB187984000030E241 /* NSDate+RT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RT.h"; sourceTree = "<group>"; };
+		0F7CF7FC187984000030E241 /* NSDate+RT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RT.m"; sourceTree = "<group>"; };
+		0F7CF7FF1879840B0030E241 /* UISearchBar+removeBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+removeBackgroundView.h"; sourceTree = "<group>"; };
+		0F7CF8001879840B0030E241 /* UISearchBar+removeBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+removeBackgroundView.m"; sourceTree = "<group>"; };
+		0F7CF8011879840B0030E241 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		0F7CF8021879840B0030E241 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		0FC1F7AC1865B9DE0030F80B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		0FC1F7AE1865B9DE0030F80B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -589,6 +601,14 @@
 		8F32842F184C73A2005FB638 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0F7CF7FF1879840B0030E241 /* UISearchBar+removeBackgroundView.h */,
+				0F7CF8001879840B0030E241 /* UISearchBar+removeBackgroundView.m */,
+				0F7CF8011879840B0030E241 /* UIView+Frame.h */,
+				0F7CF8021879840B0030E241 /* UIView+Frame.m */,
+				0F7CF7F9187984000030E241 /* NSDashedLineView.h */,
+				0F7CF7FA187984000030E241 /* NSDashedLineView.m */,
+				0F7CF7FB187984000030E241 /* NSDate+RT.h */,
+				0F7CF7FC187984000030E241 /* NSDate+RT.m */,
 				8F6EE1AD184C7EFF00432FA8 /* UIScrollView+UITouchEvent.h */,
 				8F6EE1AE184C7EFF00432FA8 /* UIScrollView+UITouchEvent.m */,
 				8F6EE1A8184C7E6700432FA8 /* UIImage+Processing.h */,
@@ -715,6 +735,7 @@
 				8F32841F184C70E9005FB638 /* UIButton+WebCache.m in Sources */,
 				8F32840B184C70E9005FB638 /* AFHTTPRequestOperation.m in Sources */,
 				8F32841B184C70E9005FB638 /* SDWebImageDecoder.m in Sources */,
+				0F7CF7FE187984000030E241 /* NSDate+RT.m in Sources */,
 				8F32843B184C73A2005FB638 /* UIDevice+IdentifierAddition.m in Sources */,
 				8F32841A184C70E9005FB638 /* SDImageCache.m in Sources */,
 				8F6EE1AA184C7E6700432FA8 /* UIImage+Processing.m in Sources */,
@@ -724,8 +745,10 @@
 				0FC1F7BF1865D0980030F80B /* NSData+CommonCrypto.m in Sources */,
 				8F328419184C70E9005FB638 /* MKAnnotationView+WebCache.m in Sources */,
 				8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */,
+				0F7CF8041879840B0030E241 /* UIView+Frame.m in Sources */,
 				8F32842D184C7190005FB638 /* NetworkManager.m in Sources */,
 				8F328413184C70E9005FB638 /* EGORefreshTableHeaderView.m in Sources */,
+				0F7CF7FD187984000030E241 /* NSDashedLineView.m in Sources */,
 				8F328417184C70E9005FB638 /* MBProgressHUD.m in Sources */,
 				8F6EE19D184C7BF900432FA8 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				8F328422184C70E9005FB638 /* SVSegmentedThumb.m in Sources */,
@@ -736,6 +759,7 @@
 				8F32841D184C70E9005FB638 /* SDWebImageManager.m in Sources */,
 				8F328438184C73A2005FB638 /* NSObject+NSJSONSerialization.m in Sources */,
 				0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */,
+				0F7CF8031879840B0030E241 /* UISearchBar+removeBackgroundView.m in Sources */,
 				8F32840D184C70E9005FB638 /* AFJSONRequestOperation.m in Sources */,
 				0F5B5FD018687088001BD675 /* WLLocationManager.m in Sources */,
 				8F32840A184C70E9005FB638 /* AFHTTPClient.m in Sources */,
