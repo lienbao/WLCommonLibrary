@@ -62,10 +62,15 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:kTimeOutNetWork];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request
                                                                                         success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                                            result(JSON, nil);
+                                                                                            if (result) {
+                                                                                                 result(JSON, nil);
+                                                                                            }
+                                                                                           
                                                                                         }
                                                                                         failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON){
-                                                                                            result(JSON, error);
+                                                                                            if (result) {
+                                                                                                result(JSON, nil);
+                                                                                            }
                                                                                         }];
     [operation start];
     return operation;

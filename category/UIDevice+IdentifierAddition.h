@@ -20,7 +20,6 @@
 + (NSString *)identifier;
 
 - (NSString *) macaddress;
-- (NSString *) uuid;
 - (NSString *) udid;
 
 - (NSString *)macaddressMD5;

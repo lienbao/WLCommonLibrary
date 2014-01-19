@@ -15,6 +15,7 @@
 #include <sys/utsname.h>
 #include <net/if.h>
 #include <net/if_dl.h>
+#include "APService.h"
 
 @interface UIDevice(Private)
 
@@ -111,36 +112,15 @@
 ////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
 #pragma mark Public Methods
-
-- (NSString *)createUUID{
-    CFUUIDRef puuid = CFUUIDCreate( nil );
-    CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
-    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
-    CFRelease(puuid);
-    CFRelease(uuidString);
-    NSString *uuid = [NSString stringWithFormat:@"%@", result];
-    CFRelease((__bridge CFTypeRef)(result));
-    return  uuid;
-}
-
-- (NSString *)uuid
-{
-    NSString *key = @"RTUUID";
-    NSString *uuid = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-    if (uuid.length == 0) {
-        [[NSUserDefaults standardUserDefaults] setObject:[self createUUID] forKey:key];
-        return [[NSUserDefaults standardUserDefaults] objectForKey:key];
-    } else {
-        return uuid;
-    }
-}
-
 - (NSString *) udid
 {
     NSString *udid = [[UDIDWrapper sharedInstance] getUDID];
-    if (udid.length==0) {
-        udid = [self uuid];
-        [[UDIDWrapper sharedInstance] saveUDID:udid];
+    if (udid.length == 0 ) {
+        udid = [APService openUDID];
+        if (udid) {
+            [[UDIDWrapper sharedInstance] saveUDID:udid];
+        }
+        
     }
     return udid;
 }

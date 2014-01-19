@@ -33,7 +33,6 @@
 		8F328411184C70E9005FB638 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3283A6184C70E9005FB638 /* AFXMLRequestOperation.m */; };
 		8F328412184C70E9005FB638 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3283A8184C70E9005FB638 /* UIImageView+AFNetworking.m */; };
 		8F328413184C70E9005FB638 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3283AD184C70E9005FB638 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8F328414184C70E9005FB638 /* libPushSDK-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283B9184C70E9005FB638 /* libPushSDK-Simulator.a */; };
 		8F328415184C70E9005FB638 /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3283BA184C70E9005FB638 /* libPushSDK.a */; };
 		8F328416184C70E9005FB638 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3283BE184C70E9005FB638 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F328417184C70E9005FB638 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3283C2184C70E9005FB638 /* MBProgressHUD.m */; };
@@ -145,7 +144,6 @@
 		8F3283B5184C70E9005FB638 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
 		8F3283B6184C70E9005FB638 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
 		8F3283B8184C70E9005FB638 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
-		8F3283B9184C70E9005FB638 /* libPushSDK-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-Simulator.a"; sourceTree = "<group>"; };
 		8F3283BA184C70E9005FB638 /* libPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPushSDK.a; sourceTree = "<group>"; };
 		8F3283BD184C70E9005FB638 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		8F3283BE184C70E9005FB638 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				8F328425184C70E9005FB638 /* libUMFeedback.a in Frameworks */,
 				8F328427184C70EA005FB638 /* libWeChatSDK.a in Frameworks */,
 				8F328415184C70E9005FB638 /* libPushSDK.a in Frameworks */,
-				8F328414184C70E9005FB638 /* libPushSDK-Simulator.a in Frameworks */,
 				8F328423184C70E9005FB638 /* libMobClickLibrary.a in Frameworks */,
 				8F328424184C70E9005FB638 /* libMobClickLibrary_armv6.a in Frameworks */,
 			);
@@ -425,7 +422,6 @@
 			isa = PBXGroup;
 			children = (
 				8F3283B8184C70E9005FB638 /* APService.h */,
-				8F3283B9184C70E9005FB638 /* libPushSDK-Simulator.a */,
 				8F3283BA184C70E9005FB638 /* libPushSDK.a */,
 			);
 			path = JPush_ios_sdk;
