@@ -18,12 +18,12 @@
 + (NSString *)appName;
 + (NSString *)appVersion;
 + (NSString *)identifier;
++ (NSString *)getIPAddress;
++ (NSString *)deviceType;
++ (NSString *)ostype;//显示“ios6，ios5”，只显示大版本号
 
 - (NSString *) macaddress;
 - (NSString *) udid;
-
-- (NSString *)macaddressMD5;
-+ (NSString *)deviceType;
-+ (NSString *)ostype;//显示“ios6，ios5”，只显示大版本号
+- (NSString *) macaddressMD5;
 
 @end
