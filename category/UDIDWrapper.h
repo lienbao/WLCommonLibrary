@@ -13,6 +13,7 @@
 
 + (id)sharedInstance;
 
+- (NSString *)getOldUDID;
 - (NSString *)getUDID;
 - (void)saveUDID:(NSString *)udid;
 

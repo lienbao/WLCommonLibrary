@@ -145,13 +145,21 @@
 - (NSString *) udid
 {
     NSString *udid = [[UDIDWrapper sharedInstance] getUDID];
-    if (udid.length == 0 ) {
-        udid = [APService openUDID];
-        if (udid) {
-            [[UDIDWrapper sharedInstance] saveUDID:udid];
-        }
-        
+    if (udid.length > 0) {
+        return udid;
     }
+    
+    udid = [[UDIDWrapper sharedInstance] getOldUDID];
+    if (udid.length > 0) {
+        [[UDIDWrapper sharedInstance] saveUDID:udid];
+        return udid;
+    }
+    
+    udid = [APService openUDID];
+    if (udid) {
+        [[UDIDWrapper sharedInstance] saveUDID:udid];
+    }
+
     return udid;
 }
 
