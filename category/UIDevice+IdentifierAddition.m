@@ -144,14 +144,13 @@
 #pragma mark Public Methods
 - (NSString *) udid
 {
-    NSString *udid = [[UDIDWrapper sharedInstance] getUDID];
+    NSString *udid = [[UDIDWrapper sharedInstance] getOldUDID];
     if (udid.length > 0) {
         return udid;
     }
     
-    udid = [[UDIDWrapper sharedInstance] getOldUDID];
+    udid = [[UDIDWrapper sharedInstance] getUDID];
     if (udid.length > 0) {
-        [[UDIDWrapper sharedInstance] saveUDID:udid];
         return udid;
     }
     

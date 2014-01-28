@@ -10,11 +10,11 @@
 
 static NSString *serviceName = @"com.wei64Apps";
 static NSString *udidName = @"wei64AppsUDID";
-static NSString *pasteboardType = @"wei64AppsContent";
+//static NSString *pasteboardType = @"wei64AppsContent";
 
 static NSString *oldServiceName = @"com.anjukeApps";
 static NSString *oldUdidName = @"anjukeAppsUDID";
-static NSString *oldPasteboardType = @"anjukeAppsContent";
+//static NSString *oldPasteboardType = @"anjukeAppsContent";
 
 @implementation UDIDWrapper
 
