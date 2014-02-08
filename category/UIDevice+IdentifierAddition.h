@@ -21,6 +21,7 @@
 + (NSString *)getIPAddress;
 + (NSString *)deviceType;
 + (NSString *)ostype;//显示“ios6，ios5”，只显示大版本号
++ (NSString *)oldUdid;
 
 - (NSString *) macaddress;
 - (NSString *) udid;

@@ -66,6 +66,16 @@
     return [[UIDevice currentDevice] udid];
 }
 
++ (NSString *)oldUdid
+{
+    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+        return [[UIDevice currentDevice] macaddress];
+    }
+    
+    NSString *udid = [[UDIDWrapper sharedInstance] getOldUDID];
+    return udid;
+}
+
 + (NSString *)appName
 {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];

@@ -135,6 +135,10 @@ static NSString * const kDianpingServiceUrl = @"http://api.dianping.com/v1";
             [paramsDic setObject:[UIDevice appVersion]  forKey:@"version"];
             [paramsDic setObject:[UIDevice deviceType]  forKey:@"device"];
             [paramsDic setObject:[UIDevice ostype]  forKey:@"ostype"];
+            if ([[UIDevice oldUdid] length]) {
+               [paramsDic setObject:[UIDevice oldUdid]  forKey:@"oldUdid"];
+            }
+            [paramsDic setObject:[UIDevice getIPAddress]  forKey:@"Intranet_IP"];
             NSString *beforeEncode = [self implodeWithDictionary:paramsDic withSeparator:@"&" encode:YES];
             //NSString *strParams = [NSString stringWithFormat:@"%@",[beforeEncode stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
             requestStr = [NSString stringWithFormat:@"%@/%@?%@", kWei64ServiceUrl, method, beforeEncode/*strParams*/];
