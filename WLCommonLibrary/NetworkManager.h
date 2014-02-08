@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, NMServiceType) {
 
 static const double kTimeOutNetWork = 6.0f;
 static NSString * const kDianpingAppkey = @"03028502";
-static NSString * const kDianpingSecret = @"8d25190423204c5f8dd242fccfcca6e9";
+static NSString * const kDianpingSecret = @"fb1026a1694d45aab79e9a0741e50560";
 
 @interface NetworkManager : NSObject
 
