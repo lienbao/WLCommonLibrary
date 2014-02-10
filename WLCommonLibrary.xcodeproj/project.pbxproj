@@ -12,6 +12,8 @@
 		0F7CF7FE187984000030E241 /* NSDate+RT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF7FC187984000030E241 /* NSDate+RT.m */; };
 		0F7CF8031879840B0030E241 /* UISearchBar+removeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF8001879840B0030E241 /* UISearchBar+removeBackgroundView.m */; };
 		0F7CF8041879840B0030E241 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CF8021879840B0030E241 /* UIView+Frame.m */; };
+		0FBAA1A518A8A09300FBCB37 /* DPNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBAA1A418A8A09300FBCB37 /* DPNetworkService.m */; };
+		0FBAA1A818A8A1CC00FBCB37 /* BaseNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBAA1A718A8A1CC00FBCB37 /* BaseNetworkService.m */; };
 		0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0FC1F7BE1865D0980030F80B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7B91865D0980030F80B /* NSData+Base64.m */; };
 		0FC1F7BF1865D0980030F80B /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1F7BB1865D0980030F80B /* NSData+CommonCrypto.m */; };
@@ -98,6 +100,10 @@
 		0F7CF8001879840B0030E241 /* UISearchBar+removeBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+removeBackgroundView.m"; sourceTree = "<group>"; };
 		0F7CF8011879840B0030E241 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		0F7CF8021879840B0030E241 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		0FBAA1A318A8A09300FBCB37 /* DPNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPNetworkService.h; path = WLCommonLibrary/DPNetworkService.h; sourceTree = "<group>"; };
+		0FBAA1A418A8A09300FBCB37 /* DPNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPNetworkService.m; path = WLCommonLibrary/DPNetworkService.m; sourceTree = "<group>"; };
+		0FBAA1A618A8A1CC00FBCB37 /* BaseNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNetworkService.h; path = WLCommonLibrary/BaseNetworkService.h; sourceTree = "<group>"; };
+		0FBAA1A718A8A1CC00FBCB37 /* BaseNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNetworkService.m; path = WLCommonLibrary/BaseNetworkService.m; sourceTree = "<group>"; };
 		0FC1F7AC1865B9DE0030F80B /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		0FC1F7AD1865B9DE0030F80B /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		0FC1F7AE1865B9DE0030F80B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -263,6 +269,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9D919B18A8C3D0000A1DAD /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B5FCE18687088001BD675 /* WLLocationManager.h */,
+				0F5B5FCF18687088001BD675 /* WLLocationManager.m */,
+			);
+			name = LocationManager;
+			sourceTree = "<group>";
+		};
 		0FC1F7AB1865B9DE0030F80B /* base64 */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,9 +344,8 @@
 		8F328394184C70D9005FB638 /* WLCommLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				0F5B5FCE18687088001BD675 /* WLLocationManager.h */,
-				0F5B5FCF18687088001BD675 /* WLLocationManager.m */,
 				8F32842E184C7330005FB638 /* WLCommonLibrary-Prefix.pch */,
+				0F9D919B18A8C3D0000A1DAD /* LocationManager */,
 				0FC1F7AB1865B9DE0030F80B /* base64 */,
 				8F6EE198184C7BF900432FA8 /* TPKeyboardAvoiding */,
 				8F32842F184C73A2005FB638 /* Category */,
@@ -590,6 +604,10 @@
 			children = (
 				8F32842B184C7190005FB638 /* NetworkManager.h */,
 				8F32842C184C7190005FB638 /* NetworkManager.m */,
+				0FBAA1A318A8A09300FBCB37 /* DPNetworkService.h */,
+				0FBAA1A418A8A09300FBCB37 /* DPNetworkService.m */,
+				0FBAA1A618A8A1CC00FBCB37 /* BaseNetworkService.h */,
+				0FBAA1A718A8A1CC00FBCB37 /* BaseNetworkService.m */,
 			);
 			name = NetworkManager;
 			sourceTree = "<group>";
@@ -738,6 +756,7 @@
 				0FC1F7BE1865D0980030F80B /* NSData+Base64.m in Sources */,
 				8F32840E184C70E9005FB638 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				8F32841C184C70E9005FB638 /* SDWebImageDownloader.m in Sources */,
+				0FBAA1A818A8A1CC00FBCB37 /* BaseNetworkService.m in Sources */,
 				0FC1F7BF1865D0980030F80B /* NSData+CommonCrypto.m in Sources */,
 				8F328419184C70E9005FB638 /* MKAnnotationView+WebCache.m in Sources */,
 				8F6EE19E184C7BF900432FA8 /* TPKeyboardAvoidingTableView.m in Sources */,
@@ -757,6 +776,7 @@
 				0FC1F7AF1865B9DE0030F80B /* GTMBase64.m in Sources */,
 				0F7CF8031879840B0030E241 /* UISearchBar+removeBackgroundView.m in Sources */,
 				8F32840D184C70E9005FB638 /* AFJSONRequestOperation.m in Sources */,
+				0FBAA1A518A8A09300FBCB37 /* DPNetworkService.m in Sources */,
 				0F5B5FD018687088001BD675 /* WLLocationManager.m in Sources */,
 				8F32840A184C70E9005FB638 /* AFHTTPClient.m in Sources */,
 			);
